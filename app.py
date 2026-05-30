@@ -16,6 +16,7 @@ app = Flask(__name__) #Creates Your webserver
 socketio = SocketIO(
     app,
     cors_allowed_origins="*" #allow froentend to connect from any origin
+    async_mode="eventlet"
 )
 
 # Store history per connected user
