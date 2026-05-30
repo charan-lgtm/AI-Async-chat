@@ -7,6 +7,8 @@ import os#read the .env files
 
 #setup
 # Load environment variables
+eventlet.monkey_patch()
+
 load_dotenv()
 
 app = Flask(__name__) #Creates Your webserver
